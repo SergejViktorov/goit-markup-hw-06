@@ -240,6 +240,7 @@ header .contaner {
   align-items: center;
   letter-spacing: 0.06em;
   min-width: 145px;
+  outline: none;
 }
 /* секция преимущество */
 .details {
@@ -667,6 +668,8 @@ address .item:not(:last-child) {
 }
 .modal {
   position: absolute;
+  margin-right: 41px;
+  margin-left: 41px;
   width: 528px;
   height: 581px;
   left: 50%;
@@ -676,6 +679,57 @@ address .item:not(:last-child) {
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.modal-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.92;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primery-text-color);
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+.modal-form {
+  position: relative;
+}
+.modal-input {
+  cursor: pointer;
+  outline: none;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.modal-input:not(:last-child) {
+  margin-bottom: 28px;
+}
+.modal-textarea {
+  outline: none;
+  cursor: pointer;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.checkbox {
+  display: block;
+  cursor: pointer;
+}
+.modal-button {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--secondary-accent-color);
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .backdrop.is-hidden {
   opacity: 0;

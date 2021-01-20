@@ -370,14 +370,37 @@
     </footer>
 <div class="backdrop is-hidden" data-modal >
 <div class="modal" data-backdrop >
-    <form>
-        <label>
-            <input type="email" name="email" />
-            </label>
-
+    
+    <form class="modal-form">
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <label class="">
+            Имя
+            <input class="modal-input" type="text" name="username" autocomplete="off" />
         </label>
-    </form>
-    <button class="backdrop-button" data-modal-close>✖</button></div>
+        <label>
+            Телефон
+            <input class="modal-input" type="tel" name="phone_number" autocomplete="off" />
+        </label>
+        <label>
+            Почта
+            <input class="modal-input" type="email" name="email"  autocomplete="off"/>
+        </label>
+        <label>
+            Комментарий
+        <textarea class="modal-textarea" name="comment" rows="5" placeholder="Введите текст"></textarea>
+        </label>
+        <label>
+            <input class="checkbox" type="checkbox" name="hobby" value="music" checked />
+            Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a>
+        </label>
+        
+    
+    <button class="modal-button" type="button">
+        Отправить
+    </button>
+    <button class="backdrop-button" data-modal-close>✖</button>
+</form>
+</div>
 </div>
 <script src="./js/modal.js"></script>
 </body>
