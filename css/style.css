@@ -697,6 +697,7 @@ address .item:not(:last-child) {
 }
 .container-input {
   margin-bottom: 10px;
+  width: 448px;
 }
 .container-input:not(:last-child) {
   margin-bottom: 10px;
@@ -716,7 +717,7 @@ address .item:not(:last-child) {
 .modal-input {
   cursor: pointer;
   outline: none;
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
