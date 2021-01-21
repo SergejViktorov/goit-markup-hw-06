@@ -667,6 +667,7 @@ address .item:not(:last-child) {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
+  padding: 40px;
   position: absolute;
   margin-right: 41px;
   margin-left: 41px;
@@ -689,11 +690,28 @@ address .item:not(:last-child) {
   letter-spacing: 0.03em;
 
   color: var(--primery-text-color);
-  padding-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 .modal-form {
   position: relative;
+}
+.container-input {
+  margin-bottom: 10px;
+}
+.container-input:not(:last-child) {
+  margin-bottom: 10px;
+}
+.title-input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+  margin-bottom: 4px;
 }
 .modal-input {
   cursor: pointer;
@@ -707,6 +725,9 @@ address .item:not(:last-child) {
 .modal-input:not(:last-child) {
   margin-bottom: 28px;
 }
+.container-textarea {
+  margin-bottom: 20px;
+}
 .modal-textarea {
   outline: none;
   cursor: pointer;
@@ -715,6 +736,9 @@ address .item:not(:last-child) {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+.container-checkbox {
+  margin-bottom: 30px;
 }
 .checkbox {
   display: block;
