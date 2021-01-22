@@ -366,11 +366,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-form">
-                <form >
-                <p class="footer-title">Подпишитесь на рассылку</p>
-                <input type="text">
-                <button class="footer-button"></button>
+            <div class="container-form">
+                <form class="footer-form">
+                <label >
+                    <p class="footer-title">Подпишитесь на рассылку</p>
+                <input class="footer-input" type="text" name="mail" placeholder="E-mail">
+                
+                <button class="footer-button">Подписаться
+                    <svg class="button-img" width="24" height="24">
+                            <use  href="./images/symbol-defs.svg#icon-icon-send-1-1"></use>
+                        </svg>
+                </button>
+                </label>
                 </form>
             </div>
         </div>
@@ -384,7 +391,9 @@
                 <label >
                     <div class="title-input">Имя</div>
                     <input class="modal-input" type="text" name="username" autocomplete="off" />
-                <div class="modal-img"> <svg><use></use></svg></div>
+                <div class="modal-img"> <svg width="12" height="12"><use href="./images/symbol-defs.svg#icon-username">
+
+                </use></svg></div>
                 </label>
             </div>
             <div class="container-input">
@@ -392,8 +401,8 @@
                     <div class="title-input">Телефон</div>
                     <input class="modal-input" type="tel" name="phone_number" autocomplete="off" />
                 <div class="modal-img">
-                     <svg>
-                        <use></use>
+                     <svg width="13" height="13">
+                        <use href="./images/symbol-defs.svg#icon-phone_number"></use>
                     </svg>
                 </div>
                 </label>
@@ -402,8 +411,8 @@
                 <label>
                     <div class="title-input">Почта</div>
                     <input class="modal-input" type="email" name="email" autocomplete="off" />
-                <div class="modal-img"> <svg>
-                        <use></use>
+                <div class="modal-img"> <svg width="15" height="12">
+                        <use href="./images/symbol-defs.svg#icon-email"></use>
                     </svg></div>
                 </label>
             </div>
@@ -415,7 +424,7 @@
             </div>
             <div class="container-checkbox">
                 <label>
-                    <input class="checkbox" type="checkbox" name="hobby" value="music" checked />
+                    <input class="checkbox" type="checkbox" name="" value="" checked />
                     Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a>
                 </label>
             </div>
