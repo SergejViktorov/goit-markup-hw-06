@@ -763,14 +763,31 @@ address .item:not(:last-child) {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
-  cursor: pointer;
 }
 .modal-input:focus {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
   outline: none;
   border-color: var(--accent-color);
 }
-.modal-input:focus + .modal-img {
+.container-input:focus > .modal-img {
+  color: var(--accent-color);
   border-color: var(--accent-color);
+}
+.modal-input:hover ~ .modal-img {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.container-input:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+.container-input:focus-within > .modal-img {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 .modal-img {
   position: absolute;
@@ -779,6 +796,7 @@ address .item:not(:last-child) {
   width: 18px;
   height: 18px;
 }
+
 .container-textarea {
   margin-bottom: 20px;
 }
@@ -796,13 +814,55 @@ address .item:not(:last-child) {
 .container-checkbox {
   margin-bottom: 30px;
   display: block;
-}
-.checkbox {
-  display: inline;
-  cursor: pointer;
-  text-align: center;
+  position: relative;
   align-items: center;
+  text-align: center;
+}
+.old-checkbox {
+}
+.visualli-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.old-checkbox:checked ~ .icon-checkbox {
+  background-color: var(--accent-color);
+  display: block;
+}
+.text-checkbox {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  display: block;
+  margin-left: 14px;
+}
+.modal-label {
+  display: inline-block;
+}
+.text-checkbox .link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.icon-checkbox {
+  left: 12px;
+  top: 50%;
+  position: absolute;
+  width: 16px;
+  height: 15px;
   cursor: pointer;
+  border: 2px solid var(--primery-text-color);
+  margin-left: px;
+  display: block;
+  transform: translate(-50%);
 }
 .modal-button {
   display: block;
