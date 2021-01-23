@@ -367,7 +367,7 @@
                 </ul>
             </div>
             <div class="container-form">
-                <form class="footer-form">
+                <form class="footer-form" autocomplete="off">
                 <label >
                     <p class="footer-title">Подпишитесь на рассылку</p>
                 <input class="footer-input" type="text" name="mail" placeholder="E-mail">
@@ -386,8 +386,8 @@
     <div class="modal" data-backdrop>
         <button class="backdrop-button" data-modal-close>✖</button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="modal-form">
-            <div class="container-input">
+        <form class="modal-form" autocomplete="off">
+            <div class="form-field">
                 <label >
                     <div class="title-input">Имя</div>
                     <input class="modal-input" type="text" name="username" autocomplete="off" />
@@ -396,25 +396,27 @@
                 </use></svg></div>
                 </label>
             </div>
-            <div class="container-input">
-                <label class="label-input">
+            <div class="form-field">
+                <label >
                     <div class="title-input">Телефон</div>
                     <input class="modal-input" type="tel" name="phone_number" autocomplete="off" />
-                <div class="modal-img">
-                     <svg class="svg-modal"  width="13" height="13">
-                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                
+                    <div class="modal-img">
+                     <svg   width="13" height="13">
+                        <use href="./images/symbol-defs.svg#icon-phone_number"></use>
                     </svg>
                 </div>
                 </label>
             </div>
-            <div class="container-input">
-                <label>
-                    <div class="title-input">Почта</div>
+            <div class="form-field">
+                <label class="label-input">
+                    <div class="title-input">Почта</div></label>
                     <input class="modal-input" type="email" name="email" autocomplete="off" />
-                <div class="modal-img"> <svg width="15" height="12">
+                
+                    <div class="modal-img"> <svg width="15" height="12">
                         <use href="./images/symbol-defs.svg#icon-email"></use>
                     </svg></div>
-                </label>
+                
             </div>
             <div class="container-textarea">
                 <label>
@@ -426,7 +428,7 @@
                 <label class="modal-label">
                     <input class="old-checkbox visualli-hidden" type="checkbox"  />
                   <div class="text-checkbox">
-                  Соглашаюсь с рассылкой и принимаю <a class="link" href=""> Условия договора</a></div>
+                  Соглашаюсь с рассылкой и принимаю <a class="link-checkbox" href=""> Условия договора</a></div>
                 <div class="icon-checkbox"></div>
                 </label>
             </div>
