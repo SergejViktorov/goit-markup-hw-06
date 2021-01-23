@@ -777,15 +777,18 @@ address .item:not(:last-child) {
 
 .modal-img {
   position: absolute;
-  left: 12px;
   top: 50%;
-  width: 18px;
-  height: 18px;
+  left: 12px;
   transform: translateY(-50%);
-  display: inline-block;
+
+  fill: currentColor;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-img {
+  width: 18px;
+  height: 18px;
 }
 .modal-label {
   position: relative;
