@@ -899,11 +899,15 @@ address .item:not(:last-child) {
   height: 30px;
   cursor: pointer;
 }
-.batton-X:hover,
-.batton-X:focus {
+.batton-x:hover,
+.batton-x:focus {
   color: var(--accent-color);
 }
 .batton-x {
+  text-align: center;
+  align-items: center;
+  display: block;
+  font-family: none;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
