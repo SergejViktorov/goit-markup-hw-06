@@ -726,30 +726,32 @@ address .item:not(:last-child) {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
 .modal-form {
 }
 .form-field {
   position: relative;
-  margin-bottom: 10px;
+}
+.field-container {
   width: 100%;
 }
-
 .title-input {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
-  align-items: center;
-  justify-content: center;
   letter-spacing: 0.01em;
-
+  position: absolute;
   color: #757575;
   margin-bottom: 4px;
+  transform: translateY(-1em -5px);
+  display: block;
+  left: 0;
+  top: -15px;
 }
-.label-input {
-  position: relative;
+.phone_number {
+  margin-bottom: ;
 }
 .modal-input {
   outline: none;
@@ -759,6 +761,7 @@ address .item:not(:last-child) {
   padding: 12px 42px;
   font: inherit;
   display: block;
+  margin-bottom: 31px;
 }
 .modal-input:hover,
 .modal-input:focus {
@@ -769,6 +772,9 @@ address .item:not(:last-child) {
   border-color: var(--accent-color);
 }
 .modal-input:focus + .modal-img {
+  fill: var(--accent-color);
+}
+.modal-input:hover + .modal-img {
   fill: var(--accent-color);
 }
 
@@ -783,6 +789,8 @@ address .item:not(:last-child) {
   top: 50%;
   width: 18px;
   height: 18px;
+  transform: translateY(-50%);
+  display: inline-block;
 }
 .modal-label {
   position: relative;
@@ -797,10 +805,8 @@ address .item:not(:last-child) {
   width: 100%;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
+  display: block;
   padding: 12px 16px;
-  cursor: pointer;
 }
 .modal-textarea:focus,
 .modal-textarea:hover {
@@ -828,6 +834,10 @@ address .item:not(:last-child) {
 .old-checkbox:checked ~ .icon-checkbox {
   background-color: var(--accent-color);
   display: block;
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
 }
 .text-checkbox {
   font-style: normal;
@@ -852,6 +862,7 @@ address .item:not(:last-child) {
   height: 15px;
   cursor: pointer;
   border: 2px solid var(--primery-text-color);
+  border-radius: 4px;
   margin-right: 8px;
   display: inline- block;
   transform: translateY(-50%);
