@@ -499,6 +499,7 @@ header .contaner {
   color: #fff;
   margin-bottom: 20px;
   margin-top: 0;
+  display: block;
 }
 .container-form {
   margin-left: auto;
@@ -863,8 +864,6 @@ address .item:not(:last-child) {
   cursor: pointer;
   border: 2px solid var(--primery-text-color);
   border-radius: 4px;
-  margin-right: 8px;
-  display: inline- block;
   transform: translateY(-50%);
 }
 .modal-button {
